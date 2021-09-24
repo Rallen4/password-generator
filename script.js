@@ -20,11 +20,13 @@ var charAmountId = document.getElementById("charLength");
 var upperCharCode = arrayLowHigh(65,90);
 var lowerCharCode = arrayLowHigh(97,122);
 var numCharCode = arrayLowHigh(48,57);
-var symCharCode = arrayLowHigh(48,57).concat((58,64)
-).concat(91,96)
-.concat(123,126);
+var symCharCode = arrayLowHigh(48,57)
+var symCharCode = arrayLowHigh(58,64)
+var symCharCode = arrayLowHigh(91,96)
+var symCharCode = arrayLowHigh(123,126)
 
-// *Adding .addEventListener to tell the system to output a value after clicking on the "Click Me to Generate" button. This is where my issue lies -- I tried adding .value to line 31 and .checked to lines 32-34 but the system told me these were null and not defined. 
+
+// *Adding .addEventListener to tell the system to output a value after clicking on the "Click Me to Generate" button. This is where my issue lies -- I tried adding .value to line 31 and .checked to lines 33-36 but the system told me these were null and not defined. 
 form.addEventListener('"click", function(event) {
     event.preventDefault();
 
@@ -32,11 +34,10 @@ var charAmount = useNumbers;
 var incSymbolId = useSymbols;
 var incNumbers = useNumbers;
 var useUpperCase = useUpper;
+
 var password = generatePassword(charAmount, incSymbolId, incNumbers,useUpperCase)
 passShown.innerText = passOutput;
-
-// console.log(password);
-})
+});
 
 // creating generate password function and calling on each indivual variable to decide on outcomes in each possible scenario. 
 function generatePassword(charAmount, incSymbols, incNumbers, incUpperCase) {
