@@ -7,13 +7,14 @@ body {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    text-shadow: 1px 0.5px #eec643;
 }
 
 h2 {
     font-size: medium;
 }
 
-.container {
+.main-content {
     background-color: aliceblue;
     padding: 1rem;
     justify-content: center;
@@ -26,4 +27,21 @@ h2 {
 .grid {
     display: grid;
     grid-template-columns: auto auto;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
+
+.output {
+    background-color: #26b8b0;
+    color: white;
+    display: flex;
+    padding: 2rem;
+    border: dotted  #eec643;
+    height: 3rem;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
