@@ -1,3 +1,4 @@
+/* Add simply background color, align items to center, and set min height to 100vh to reduce scrolling effect. Add text-shadow for cool text effect */
 body {
     margin: 0;
     font-family:'Courier New', Courier, monospace;
@@ -14,6 +15,7 @@ h2 {
     font-size: medium;
 }
 
+/* justify-content and align-items to ensure all components are neatly organized. Add flex display for cross-functionality and padding for room. */
 .main-content {
     background-color: aliceblue;
     padding: 1rem;
@@ -24,6 +26,7 @@ h2 {
     border: dotted #eec643;
 }
 
+/* add grid-template-columns for text neatness and alignment.  */
 .grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -33,6 +36,7 @@ h2 {
     align-items: center;
 }
 
+/* add password output box with diversified color background, padding, and 250px width to take up enough space, but not too much. Border for spice.  */
 .output {
     background-color: #26b8b0;
     color: white;
@@ -43,5 +47,6 @@ h2 {
     width: 250px;
     justify-content: center;
     align-items: center;
+    visibility: visible;
 }
 
