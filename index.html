@@ -14,7 +14,7 @@
         <h1>Generate Your Password 🤓</h1>
         <h2>✏️ or ✅ boxes to Get Started</h2>
         <h3 class="output">This is Where the Password Output Goes</h3>
-        <form class="grid">
+        <form class="grid" id="pwdGen">
             <label for="charNUM"># of Characters (Min 8; Max 128)</label>
             <input type="number" min="1" max="128" id="charNUM">
             <label for="NUMBERS">Thoughts on Numbers?</label>
@@ -23,7 +23,7 @@
             <input type="checkbox" id="UPcase">
             <label for="SYMBOLS">Secret Symbols Maybe?</label>
             <input type="checkbox" id="SYMBOLS">
-            <button type="submit">Click Me to Generate 🔑</button>
+            <button type="submit" id="button">Click Me to Generate 🔑</button>
         </form>
     </div>
 </body>
