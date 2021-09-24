@@ -12,10 +12,22 @@
 <body>
     <div class="container">
         <h1>Generate Your Password 🤓</h1>
+        <h2>Input/Check Boxes to Get Started</h2>
         <h3>placeholder</h3>
-        <form>
-            <label for="charNUM">Characters (Min 8; Max 128)</label>
+        <form class="grid">
+            <label for="charNUM"># of Characters (Min 8; Max 128)</label>
             <input type="number" min="1" max="128" id="charNUM">
+
+            <label for="UPCase">Prefer Uppercase Letters?</label>
+            <input type="checkbox" id="UPcase">
+
+            <label for="NUMBERS">Thoughts on Numbers?</label>
+            <input type="checkbox" id="NUMBERS">
+
+            <label for="SYMBOLS">Add Symbols Maybe?</label>
+            <input type="checkbox" id="SYMBOLS">
+
+            <button type="submit">Click Me to Generate 🔑</button>
         </form>
     </div>
 </body>
