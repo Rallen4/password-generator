@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
-    <title>Generate Your Password!</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
 
-<body>
-    <!-- create a class for all content in the body -->
-    <div class="main-content">
-        <h1>Generate Your Password 🤓</h1>
-        <h2>✏️ or ✅ boxes to Get Started</h2>
-        <!-- create h3 classes and id to tell the js file how to interact with the html following user-click button -->
-        <h3 class="output" id="seeme">This is Where the Password Output Goes</h3>
-        <!-- use css grid functions to display checked boxes in orderly fashion -->
-        <form class="grid" id="pwdGen">
-            <!-- use input type to determine the minimum/maximum number of characters to be used, symbols, and uppercase. -->
-            <label for="charNUM"># of Characters (Min 8; Max 128)</label>
-            <input type="number" min="1" max="128" id="charNUM">
-
-            <label for="NUMBERS">Thoughts on Numbers?</label>
-            <input type="checkbox" id="NUMBERS">
-            <label for="UPCase">Add Uppercase Letters?</label>
-            <input type="checkbox" id="UPcase">
-            <label for="SYMBOLS">Secret Symbols Maybe?</label>
-            <input type="checkbox" id="SYMBOLS">
-            <!-- create button and button id for js to address/call on. -->
-            <button type="submit" id="button">Click Me to Generate 🔑</button>
-        </form>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,5 +1,10 @@
 # password-generator
 
+*DISCLAIMER*: With regards to additional resources outside of class, I specifically studied a video by: Web Dev Simplified -- Video titled: "Build A Password Generator With Javascript - Tutorial"
+link to resource: https://www.youtube.com/watch?v=iKo9pDKKHnc 
+
+*More on that, I personalized my code with original tags, variable custom styles, etc. But the LAYOUT IS SIMILAR. I wanted to address this up front to avoid potential concerns -- if this is an issue, please let me know and I will re-submit a differently formatted project.*
+
 ## About This Project: 
 
 We were asked to create a javascript program that would automatically provide a user with a randomized password that included uppercase, lowercase, symbols, and number values. I believe we were asked to use confirms() and simple HTML/CSS, but I ended up using checkboxes built into a more designful layout instead after further researching how to optimize the functionality of such a program. 

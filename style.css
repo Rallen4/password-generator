@@ -1,52 +1,138 @@
-/* Add simply background color, align items to center, and set min height to 100vh to reduce scrolling effect. Add text-shadow for cool text effect */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    margin: 0;
-    font-family:'Courier New', Courier, monospace;
-    background-color: #26b8b0;
-    color: blue;
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 1px 0.5px #eec643;
+  font-family:'Courier New', Courier, monospace;
+  background-image: url(./multicolor.jpeg);
+  text-align: center;
 }
 
-h2 {
-    font-size: medium;
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* justify-content and align-items to ensure all components are neatly organized. Add flex display for cross-functionality and padding for room. */
-.main-content {
-    background-color: aliceblue;
-    padding: 1rem;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    border: dotted #eec643;
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(0, 0%, 100%);
 }
 
-/* add grid-template-columns for text neatness and alignment.  */
-.grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
 }
 
-/* add password output box with diversified color background, padding, and 250px width to take up enough space, but not too much. Border for spice.  */
-.output {
-    background-color: #26b8b0;
-    color: white;
-    display: flex;
-    padding: 2rem;
-    border: dotted  #eec643;
-    height: 3rem;
-    width: 250px;
-    justify-content: center;
-    align-items: center;
-    visibility: visible;
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
 }
 
+.card-body {
+  min-height: 100px;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  border: none;
+  background-color: blue;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+.float-right {
+  float: right;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}
