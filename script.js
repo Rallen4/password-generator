@@ -9,11 +9,6 @@ const lowerCase = ["a" + "b" + "c" + "d" + "e" + "f" + "g" + "h" + "i" + "j" + "
 const numbers = ['0' + '1' + '2' + '3' + '4' + '5' + '6' + '7' + '8' + '9' ];
 const specChar = ["!" + "@" + "#" + "$" + "%" + "^" + "&" + "*" + "(" + ")" + "-" + "_" ];
 
-//+ symbol removes any space between "" or ''
-
-// Write password to the #password input
-//parseInt turns a string variable into an integer
-//triggers a falsey statement when passwordLength is met with no integer
 function generatePassword() {
   var passwordLength = prompt("Choose the length of your password (between 8 and 128 characters)");
   console.log(Number.isInteger(parseInt(passwordLength)))
